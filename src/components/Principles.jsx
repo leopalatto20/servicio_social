@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Principles() {
   const principles = [
@@ -7,7 +7,7 @@ export default function Principles() {
     "Sharing with others",
     "Listening to understand",
     "Preserving the planet",
-    "Tolerance and solidarity"
+    "Tolerance and solidarity",
   ];
 
   return (
