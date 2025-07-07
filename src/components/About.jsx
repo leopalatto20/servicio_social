@@ -3,10 +3,10 @@ import React from "react";
 export default function About() {
   return (
     <section className="p-8">
-      <h2 className="text-3xl font-bold text-center mb-6">
+      <h2 className="text-4xl font-bold text-center mb-6">
         ¿Qué es la cultura de paz?
       </h2>
-      <p className="max-w-4xl mx-auto text-center">
+      <p className="max-w-4xl mx-auto text-center text-2xl">
         La cultura de paz se refiere a un conjunto de valores, actitudes y
         comportamientos que promueven la resolución pacífica de conflictos, la
         convivencia armónica y el respeto por los derechos humanos. En un mundo
