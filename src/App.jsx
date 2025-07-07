@@ -1,10 +1,19 @@
-import { useState } from "react";
-import "@/index.css";
+import React from "react";
+import NavBar from "@/components/navBar";
+import Header from "@/components/Header";
+import About from "@/components/About";
+import Principles from "@/components/Principles";
+import Footer from "@/components/Footer";
+import "./index.css";
 
 function App() {
   return (
     <div>
-      <h1 className="bg-black">hola amigos</h1>
+      <NavBar />
+      <Header />
+      <About />
+      <Principles />
+      <Footer />
     </div>
   );
 }
