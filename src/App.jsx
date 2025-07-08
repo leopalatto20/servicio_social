@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import About from "@/components/About";
 import Principles from "@/components/Principles";
 import Footer from "@/components/Footer";
+import Video from "@/components/Video";
 import "./index.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <About />
       <Principles />
+      <Video />
       <Footer />
     </div>
   );
