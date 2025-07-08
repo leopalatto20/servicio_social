@@ -2,7 +2,7 @@
 
 @layer components {
   .navbar-text {
-    @apply text-white hover:scale-125 hover:text-cyan-900 px-3 py-2 rounded-md text-sm 
-    font-semibold transition duration-300;
+    @apply text-white hover:scale-125 hover:text-cyan-900 px-3 py-2 rounded-md 
+    text-sm font-semibold transition duration-300;
   }
 }
