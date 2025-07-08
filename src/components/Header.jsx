@@ -7,7 +7,10 @@ export default function Header() {
       bg-no-repeat text-center p-12 flex flex-col justify-center items-center"
       id="Home"
     >
-      <h1 className="text-4xl font-bold bg-green-600/65 rounded-lg p-3 md:w-1/2">
+      <h1
+        className="text-4xl font-bold bg-green-600/65 rounded-lg p-3 
+        md:w-1/2"
+      >
         Impulsando la cultura de Paz
       </h1>
       <p className="text-xl mt-4 bg-green-600/65 rounded-lg p-3 md:w-1/2">

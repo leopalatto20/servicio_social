@@ -5,6 +5,8 @@ import About from "@/components/About";
 import Principles from "@/components/Principles";
 import Footer from "@/components/Footer";
 import Video from "@/components/Video";
+import Orgs from "@/components/Orgs";
+import Carrousel from "@/components/Carrousel";
 import "./index.css";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <About />
       <Principles />
       <Video />
+      <Orgs />
+      <Carrousel />
       <Footer />
     </div>
   );

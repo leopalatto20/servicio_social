@@ -19,10 +19,13 @@ export default function NavBar() {
                 Home
               </a>
               <a href="#About" className="navbar-text">
-                About
+                Acerca de
               </a>
               <a href="#Principles" className="navbar-text">
-                Principles
+                Principios
+              </a>
+              <a href="#Proyectos" className="navbar-text">
+                Proyectos
               </a>
             </div>
           </div>

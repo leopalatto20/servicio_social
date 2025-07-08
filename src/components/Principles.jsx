@@ -17,7 +17,7 @@ export default function Principles() {
         {principles.map((principle, index) => (
           <div
             key={index}
-            className="bg-cyan-50 p-6 rounded-lg shadow hover:bg-pink-100 
+            className="bg-blue-400 p-6 rounded-lg shadow hover:bg-cyan-100 
             duration-300 hover:scale-110"
           >
             <h3 className="text-xl font-bold font-lato">{principle}</h3>
