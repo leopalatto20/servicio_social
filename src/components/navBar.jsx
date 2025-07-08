@@ -9,7 +9,7 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2 flex-shrink-0">
             <img src={Manos} alt="Manos" className="h-8 w-8" />
-            <span className="text-2xl font-bold text-white">
+            <span className="text-2xl font-poppins text-white">
               Puentes de paz
             </span>
           </div>
