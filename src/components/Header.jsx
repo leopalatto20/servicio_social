@@ -5,6 +5,7 @@ export default function Header() {
     <header
       className="bg-[url(/cultura_paz.png)] bg-cover bg-center 
       bg-no-repeat text-center p-12 flex flex-col justify-center items-center"
+      id="Home"
     >
       <h1 className="text-4xl font-bold bg-green-600/65 rounded-lg p-3 md:w-1/2">
         Impulsando la cultura de Paz

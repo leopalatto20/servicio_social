@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="p-8">
+    <section className="p-8" id="About">
       <h2 className="text-4xl font-poppins font-bold text-center mb-6">
         ¿Qué es la cultura de paz?
       </h2>

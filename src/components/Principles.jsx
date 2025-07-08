@@ -9,7 +9,7 @@ export default function Principles() {
   ];
 
   return (
-    <section className="bg-gray-100 p-8">
+    <section className="bg-gray-100 p-8" id="Principles">
       <h2 className="text-3xl font-bold text-center mb-6 font-poppins">
         Principios clave
       </h2>
