@@ -9,7 +9,7 @@ export default function Header() {
     >
       <h1
         className="text-4xl font-bold bg-green-600/65 rounded-lg p-3 
-        md:w-1/2"
+        md:w-1/2 font-mplus"
       >
         Impulsando la cultura de Paz
       </h1>

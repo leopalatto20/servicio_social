@@ -20,7 +20,7 @@ const projects = [
 export default function Carrousel() {
   return (
     <div className="bg-white w-full py-12" id="Proyectos">
-      <h2 className="text-2xl font-bold text-center mb-6">
+      <h2 className="text-4xl font-bold text-center mb-6 font-mplus">
         Proyectos Destacados
       </h2>
       <Swiper

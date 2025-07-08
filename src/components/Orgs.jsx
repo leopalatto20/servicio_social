@@ -8,7 +8,7 @@ export default function Orgs() {
   return (
     <div className="bg-gray-100 w-fill">
       <div className="max-w-4xl mx-auto px-4 py-8 ">
-        <h2 className="text-2xl font-bold text-center mb-6">
+        <h2 className="text-4xl font-bold text-center mb-6 font-mplus">
           Organizaciones Involucradas
         </h2>
         <div

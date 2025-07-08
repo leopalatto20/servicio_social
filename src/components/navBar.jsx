@@ -15,7 +15,7 @@ export default function NavBar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a href="#Home" className="navbar-text">
+              <a href="#Home" className="font-mplus navbar-text">
                 Home
               </a>
               <a href="#About" className="navbar-text">

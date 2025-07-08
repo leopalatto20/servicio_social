@@ -1,7 +1,7 @@
 export default function Video() {
   return (
     <div className="w-full max-w-2xl mx-auto rounded-xl overflow-hidden shadow-lg m-4 px-4 sm:px-0">
-      <div className="text-3xl font-poppins text-center font-bold">
+      <div className="text-4xl font-mplus text-center font-bold">
         Mira un video
       </div>
       <div className="mt-4 rounded-xl overflow-hidden aspect-video">
