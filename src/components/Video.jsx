@@ -1,4 +1,5 @@
 export default function Video() {
+  // TODO: agregar texto de contexto al video y bordes
   return (
     <div className="w-full max-w-2xl aspect-video mx-auto rounded-xl overflow-hidden shadow-lg">
       <iframe
