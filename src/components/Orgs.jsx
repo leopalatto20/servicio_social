@@ -1,7 +1,7 @@
 const organizations = [
   { name: "Tec de Monterrey", logo: "/tec.png" },
-  { name: "Tec de Monterrey", logo: "/tec.png" },
-  { name: "Tec de Monterrey", logo: "/tec.png" },
+  { name: "Gobierno de El Salto", logo: "/gobierno.jpeg" },
+  { name: "Seguridad", logo: "/seguridad.jpeg" },
 ];
 
 export default function Orgs() {
@@ -30,7 +30,6 @@ export default function Orgs() {
                 alt={org.name}
                 className="h-24 w-full object-contain"
               />
-              <p className="mt-2 text-center text-sm font-medium">{org.name}</p>
             </div>
           ))}
         </div>
