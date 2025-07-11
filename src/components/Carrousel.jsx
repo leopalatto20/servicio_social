@@ -7,46 +7,149 @@ import "swiper/css/navigation";
 const projects = [
   {
     name: "Proyecto 1",
-    description: "Ayudó a comunidades rurales con agua potable.",
+    description:
+      "Ayudó a comunidades rurales con agua potable, mejorando la calidad de vida de más de 500 familias en zonas marginadas.",
     image: "/manos.png",
   },
   {
     name: "Proyecto 2",
-    description: "Implementación de paneles solares en zonas vulnerables.",
+    description:
+      "Implementación de paneles solares en zonas vulnerables, proporcionando energía limpia y sostenible a escuelas y centros comunitarios.",
     image: "/manos.png",
   },
 ];
 
 export default function Carrousel() {
   return (
-    <div className="bg-white w-full py-12" id="Proyectos">
-      <h2 className="text-4xl font-bold text-center mb-6 font-mplus">
-        Proyectos Destacados
-      </h2>
-      <Swiper
-        spaceBetween={16}
-        slidesPerView={1}
-        loop
-        pagination={{ clickable: true }}
-        navigation
-        modules={[Pagination, Navigation]}
-      >
-        {projects.map((project, idx) => (
-          <SwiperSlide key={idx}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto p-4">
-              <div className="flex flex-col justify-center">
-                <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                <p className="text-gray-700">{project.description}</p>
-              </div>
-              <img
-                src={project.image}
-                alt={project.name}
-                className="rounded-xl object-cover w-full h-64"
+    <section className="bg-white px-4 py-12 sm:py-16 lg:py-20" id="Proyectos">
+      <div className="max-w-6xl mx-auto">
+        <h2
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
+        font-bold text-center mb-8 sm:mb-12 font-mplus text-gray-800"
+        >
+          Proyectos Destacados
+        </h2>
+
+        <div className="relative">
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={1}
+            loop={true}
+            pagination={{
+              clickable: true,
+              dynamicBullets: true,
+              bulletClass: "swiper-pagination-bullet custom-bullet",
+              bulletActiveClass: "custom-bullet-active",
+            }}
+            navigation={{
+              nextEl: ".custom-next",
+              prevEl: ".custom-prev",
+            }}
+            modules={[Pagination, Navigation]}
+            className="pb-12"
+          >
+            {projects.map((project, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="bg-gray-50 rounded-2xl shadow-lg overflow-hidden">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                    <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+                      <h3
+                        className="text-xl sm:text-2xl lg:text-3xl font-bold 
+                      mb-4 sm:mb-6 text-gray-800 font-mplus"
+                      >
+                        {project.name}
+                      </h3>
+                      <p
+                        className="text-base sm:text-lg text-gray-600 
+                      leading-relaxed font-lato"
+                      >
+                        {project.description}
+                      </p>
+                    </div>
+                    <div className="relative h-64 sm:h-72 lg:h-80">
+                      <img
+                        src={project.image}
+                        alt={project.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Custom Navigation Buttons */}
+          <button
+            className="custom-prev absolute left-2 top-1/2 transform -translate-y-1/2 
+            bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg 
+            transition-all duration-300 z-10 hidden sm:block"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
               />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+            </svg>
+          </button>
+
+          <button
+            className="custom-next absolute right-2 top-1/2 transform -translate-y-1/2 
+            bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg 
+            transition-all duration-300 z-10 hidden sm:block"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div className="text-center mt-8">
+          <p className="text-sm sm:text-base text-gray-600">
+            Desliza para ver más proyectos
+          </p>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .custom-bullet {
+          width: 12px !important;
+          height: 12px !important;
+          background: #cbd5e1 !important;
+          opacity: 1 !important;
+          margin: 0 6px !important;
+        }
+
+        .custom-bullet-active {
+          background: #3b82f6 !important;
+          transform: scale(1.2) !important;
+        }
+
+        @media (max-width: 640px) {
+          .custom-bullet {
+            width: 10px !important;
+            height: 10px !important;
+            margin: 0 4px !important;
+          }
+        }
+      `}</style>
+    </section>
   );
 }

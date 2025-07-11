@@ -2,7 +2,12 @@
 
 @layer components {
   .navbar-text {
-    @apply text-white hover:scale-125 hover:text-cyan-900 px-3 py-2 rounded-md 
-    text-sm font-semibold transition duration-300;
+    @apply text-white hover:scale-105 hover:text-cyan-300 px-4 py-3 rounded-md 
+    text-sm font-semibold transition duration-300 ease-in-out;
+  }
+
+  .navbar-text-mobile {
+    @apply text-white hover:bg-blue-500 hover:text-cyan-300 px-4 py-3 rounded-md 
+    text-base font-semibold transition duration-300 ease-in-out w-full;
   }
 }
