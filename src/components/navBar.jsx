@@ -14,7 +14,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-blue-500 shadow-md sticky top-0 z-50">
+    <nav className="bg-blue-500 shadow-md sticky top-0 z-50 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -71,8 +71,11 @@ export default function NavBar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-blue-600 rounded-lg mt-2">
+          <div
+            className="md:hidden absolute top-full left-0 right-0 z-50 
+          bg-blue-600 shadow-lg rounded-b-lg mx-4 mt-2"
+          >
+            <div className="px-2 pt-2 pb-3 space-y-1">
               <a
                 href="#Home"
                 className="navbar-text-mobile block"
