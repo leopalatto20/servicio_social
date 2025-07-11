@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Principles() {
   const principles = [
     "Respeto por la vida",
@@ -14,25 +16,38 @@ export default function Principles() {
       id="Principles"
     >
       <div className="max-w-6xl mx-auto">
-        <h2
+        <motion.h2
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
-        font-bold text-center mb-8 sm:mb-12 font-mplus text-gray-800"
+          font-bold text-center mb-8 sm:mb-12 font-mplus text-gray-800"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
         >
           Principios clave
-        </h2>
+        </motion.h2>
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
         gap-4 sm:gap-6 lg:gap-8"
         >
           {principles.map((principle, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-gradient-to-br from-blue-400 to-blue-500 
               p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl
               hover:from-cyan-400 hover:to-cyan-500 
               transition-all duration-300 ease-in-out
-              hover:scale-105 hover:-translate-y-1
               cursor-pointer group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{
+                scale: 1.05,
+                y: -5,
+                transition: { duration: 0.2 },
+              }}
+              whileTap={{ scale: 0.95 }}
             >
               <h3
                 className="text-lg sm:text-xl lg:text-2xl font-bold 
@@ -41,7 +56,7 @@ export default function Principles() {
               >
                 {principle}
               </h3>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
