@@ -12,7 +12,7 @@ export default function Video() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Mira nuestro video
+          Mira un video
         </motion.h2>
         <motion.div
           className="bg-gray-50 rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8"
@@ -27,7 +27,7 @@ export default function Video() {
           >
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/X30UDx-H4zE?si=De3FSOqSvSMMSTyi"
+              src="https://www.youtube.com/embed/EyeqfnhDUTE?si=mC2cpeF25w3pfVcS"
               title="Cultura de Paz - Video Informativo"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

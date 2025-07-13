@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 const organizations = [
   { name: "Tec de Monterrey", logo: "/tec.png" },
   { name: "Gobierno de El Salto", logo: "/gobierno.jpeg" },
-  { name: "Seguridad", logo: "/seguridad.jpeg" },
+  {
+    name: "Coordinación Nacional de Emergencias e Inspección de El Salto",
+    logo: "/seguridad.jpeg",
+  },
 ];
 
 export default function Orgs() {
