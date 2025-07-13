@@ -114,7 +114,6 @@ export default function Principles() {
         </div>
       </section>
 
-      {/* Modal */}
       <AnimatePresence>
         {selectedPrinciple && (
           <motion.div
@@ -133,7 +132,6 @@ export default function Principles() {
               transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Header con gradiente */}
               <div
                 className={`bg-gradient-to-r ${selectedPrinciple.color} p-6 sm:p-8 rounded-t-3xl relative`}
               >
@@ -162,7 +160,6 @@ export default function Principles() {
                 </div>
               </div>
 
-              {/* Footer */}
               <div className="border-t border-gray-200 p-6 sm:p-8 bg-gray-50 rounded-b-3xl">
                 <button
                   onClick={closeModal}
