@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "@/styles/Navbar.css";
 import Manos from "@/assets/manos.png";
@@ -39,16 +39,16 @@ export default function NavBar() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="ml-10 flex items-baseline space-x-4">
-              <a href="#Home" className="navbar-text">
+              <a href="#Home" className="navbar-text text-white">
                 Home
               </a>
-              <a href="#About" className="navbar-text">
+              <a href="#About" className="navbar-text text-white">
                 Acerca de
               </a>
-              <a href="#Principles" className="navbar-text">
+              <a href="#Principles" className="navbar-text text-white">
                 Principios
               </a>
-              <a href="#Proyectos" className="navbar-text">
+              <a href="#Proyectos" className="navbar-text text-white">
                 Proyectos
               </a>
             </div>
@@ -108,7 +108,7 @@ export default function NavBar() {
                   <motion.a
                     key={item.href}
                     href={item.href}
-                    className="navbar-text-mobile block"
+                    className="navbar-text-mobile block text-white"
                     onClick={closeMenu}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
