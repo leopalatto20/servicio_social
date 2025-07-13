@@ -9,8 +9,6 @@ export default function Principles() {
       title: "Respeto por la vida",
       description:
         "Valoramos profundamente toda forma de vida, reconociendo la dignidad inherente de cada ser humano y la importancia de proteger y preservar la vida en todas sus manifestaciones.",
-      details:
-        "Este principio nos guía a tomar decisiones que honren la vida, promoviendo la paz, la salud y el bienestar de todos. Significa rechazar la violencia como medio de resolución de conflictos y trabajar activamente por crear un mundo donde cada vida sea valorada y protegida.",
       color: "from-blue-400 to-blue-500",
       hoverColor: "hover:from-blue-500 hover:to-blue-600",
     },
@@ -18,8 +16,6 @@ export default function Principles() {
       title: "No violencia",
       description:
         "Creemos firmemente en la resolución pacífica de conflictos, promoviendo el diálogo, la comprensión mutua y la búsqueda de soluciones constructivas sin recurrir a la agresión.",
-      details:
-        "La no violencia va más allá de la ausencia de agresión física; incluye el rechazo a la violencia emocional, psicológica y estructural. Promovemos la comunicación asertiva, la mediación y el entendimiento como herramientas para construir relaciones más sanas y sociedades más justas.",
       color: "from-green-400 to-green-500",
       hoverColor: "hover:from-green-500 hover:to-green-600",
     },
@@ -27,8 +23,6 @@ export default function Principles() {
       title: "Compartir con otros",
       description:
         "Fomentamos la generosidad, la solidaridad y la cooperación como pilares fundamentales para construir comunidades fuertes y resilientes donde todos puedan prosperar.",
-      details:
-        "Compartir significa más que dar recursos materiales; implica compartir conocimientos, experiencias, tiempo y apoyo emocional. Creemos que cuando compartimos, todos nos enriquecemos y creamos redes de apoyo mutuo que fortalecen el tejido social.",
       color: "from-purple-400 to-purple-500",
       hoverColor: "hover:from-purple-500 hover:to-purple-600",
     },
@@ -36,8 +30,6 @@ export default function Principles() {
       title: "Escuchar para comprender",
       description:
         "Practicamos la escucha activa y empática, buscando comprender genuinamente las perspectivas de otros antes de formar juicios o responder, creando espacios de diálogo auténtico.",
-      details:
-        "La verdadera escucha requiere humildad, paciencia y la disposición de ser transformados por lo que escuchamos. Significa poner a un lado nuestros prejuicios y estar completamente presentes para la otra persona, validando sus experiencias y emociones.",
       color: "from-amber-400 to-amber-500",
       hoverColor: "hover:from-amber-500 hover:to-amber-600",
     },
@@ -45,8 +37,6 @@ export default function Principles() {
       title: "Preservar el planeta",
       description:
         "Reconocemos nuestra responsabilidad como guardianes del medio ambiente, comprometiéndonos a proteger los ecosistemas y recursos naturales para las generaciones futuras.",
-      details:
-        "La preservación del planeta requiere cambios tanto individuales como colectivos en nuestros patrones de consumo, producción y estilo de vida. Promovemos prácticas sostenibles, la conservación de la biodiversidad y el desarrollo de tecnologías limpias que permitan la armonía entre el progreso humano y la salud ambiental.",
       color: "from-emerald-400 to-emerald-500",
       hoverColor: "hover:from-emerald-500 hover:to-emerald-600",
     },
@@ -54,8 +44,6 @@ export default function Principles() {
       title: "Tolerancia y solidaridad",
       description:
         "Celebramos la diversidad en todas sus formas, promoviendo la inclusión, el respeto por las diferencias y la construcción de puentes entre personas y comunidades diversas.",
-      details:
-        "La tolerancia no es simplemente soportar las diferencias, sino valorarlas como una fuente de enriquecimiento mutuo. La solidaridad nos impulsa a estar junto a quienes enfrentan injusticias o dificultades, trabajando juntos por un mundo más equitativo y justo para todos.",
       color: "from-rose-400 to-rose-500",
       hoverColor: "hover:from-rose-500 hover:to-rose-600",
     },
@@ -170,15 +158,6 @@ export default function Principles() {
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
                     {selectedPrinciple.description}
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3 font-lato">
-                    Más detalles
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {selectedPrinciple.details}
                   </p>
                 </div>
               </div>
