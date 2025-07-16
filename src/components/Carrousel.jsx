@@ -6,16 +6,22 @@ import "swiper/css/navigation";
 
 const projects = [
   {
-    name: "Proyecto 1",
+    name: "Construye T",
     description:
-      "Ayudó a comunidades rurales con agua potable, mejorando la calidad de vida de más de 500 familias en zonas marginadas.",
-    image: "/manos.png",
+      "Fortaleció habilidades socioemocionales en jóvenes, reduciendo casos de bullying en un 30% en escuelas públicas.",
+    image: "/construyet.jpg",
   },
   {
-    name: "Proyecto 2",
+    name: "Construyendo la paz con Lego",
     description:
-      "Implementación de paneles solares en zonas vulnerables, proporcionando energía limpia y sostenible a escuelas y centros comunitarios.",
-    image: "/manos.png",
+      "Taller lúdico que promueve la reflexión sobre la cultura de paz en las escuelas de Guadalupe, Zacatecas, utilizando la metodología Lego Serious Play para fomentar el diálogo y la resolución de conflictos.",
+    image: "/legos.jpg",
+  },
+  {
+    name: "Sí al desarme, sí a la paz",
+    description:
+      "Programa nacional que intercambia armas de fuego y juguetes bélicos por dinero y juguetes educativos, promoviendo la construcción de paz y reduciendo la violencia en comunidades de México.",
+    image: "/desarme.jpg",
   },
 ];
 
